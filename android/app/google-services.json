@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "65942792368",
+    "project_id": "acomerlapp-5dbbb",
+    "storage_bucket": "acomerlapp-5dbbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65942792368:android:f89d33012554397ad77375",
+        "android_client_info": {
+          "package_name": "com.example.acomerlapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65942792368-0g8ol6g9jfjq53pe8s3i0jjf8nl3c8o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHpHBEvQGNYCuQ7opBfAKrtOt3DH6o7aE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65942792368-0g8ol6g9jfjq53pe8s3i0jjf8nl3c8o3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "65942792368-bv0b11tv6ieum4djra2c585fkjvrl2ns.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.acomerlapp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
