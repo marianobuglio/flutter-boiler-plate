@@ -1,9 +1,9 @@
 import 'package:acomerlapp/features/authentication/login/screens/login.dart';
 import 'package:acomerlapp/features/authentication/signup/screens/verify_email.dart';
+import 'package:acomerlapp/features/navigation/navigation_menu.dart';
 import 'package:acomerlapp/features/onboarding/screens/onboarding_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
@@ -24,10 +24,9 @@ class AuthenticationRespositorie extends GetxController {
 
   screenRedirect() async {
     final user = _auth.currentUser;
-
     if (user != null) {
       if (user.emailVerified) {
-        Get.offAll(const LoginScreen());
+        Get.offAll(const NavigationMenu());
       } else {
         Get.offAll(VerifyEmail(email: user.email));
       }
@@ -179,7 +178,7 @@ class AuthenticationRespositorie extends GetxController {
     }
   }
 
-String getFirebaseAuthErrorType(FirebaseAuthException exception) {
+  String getFirebaseAuthErrorType(FirebaseAuthException exception) {
   switch (exception.code) {
     case 'invalid-email':
       return 'Invalid email';

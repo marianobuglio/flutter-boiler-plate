@@ -1,5 +1,4 @@
 import 'package:acomerlapp/features/authentication/recoverPassword/controllers/recoverPassword.controller.dart';
-import 'package:acomerlapp/features/authentication/recoverPassword/screens/verify_email_pasword.dart';
 import 'package:acomerlapp/utils/constants/sizes.dart';
 import 'package:acomerlapp/utils/constants/text_strings.dart';
 import 'package:acomerlapp/utils/validators/validation.dart';

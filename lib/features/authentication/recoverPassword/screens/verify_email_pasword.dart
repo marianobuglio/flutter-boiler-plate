@@ -1,4 +1,3 @@
-import 'package:acomerlapp/common/widgets/success_screen/success_screen.dart';
 import 'package:acomerlapp/features/authentication/login/screens/login.dart';
 import 'package:acomerlapp/features/authentication/recoverPassword/controllers/verify_email_password.controller.dart';
 import 'package:acomerlapp/utils/constants/image_strings.dart';
