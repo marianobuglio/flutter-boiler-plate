@@ -1,7 +1,10 @@
+import 'package:acomerlapp/features/home/home.dart';
+import 'package:acomerlapp/features/profile/settings/settings.dart';
+import 'package:acomerlapp/features/screenOne%20(store)/screenOne.dart';
+import 'package:acomerlapp/features/secondScreen%20(wishlist)/secondScreen.dart';
 import 'package:acomerlapp/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import 'package:iconsax/iconsax.dart';
 
 class NavigationMenu extends StatelessWidget {
@@ -40,9 +43,9 @@ class NavigationController extends GetxController {
 
   final Rx<int> _selectedIndex = 0.obs;
   final screens = [
-    Container(color: Colors.red),
-    Container(color: Colors.blue),
-    Container(color: Colors.green),
-    Container(color: Colors.yellow),
-  ];
+    const HomeScreen(),
+    const ScreenOne(),
+    const SecondScreen(),
+    const SettingsScreen()
+    ];
 }
